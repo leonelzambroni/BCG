@@ -9,9 +9,29 @@ import java.util.Scanner;
  */
 public class App 
 {
+	static int sticks = 21;
+
+	public  long getSticks() {
+		return sticks;
+	}
+
+	public  void setSticks(long l) {
+		App.sticks = (int) l;
+	}
+
     public static void main( String[] args )
     {
-    	int sticks = 21;
+    	
+
+    	game();
+    	
+    
+    }
+    
+    public static void  game()
+    {
+    	
+    	
 		Scanner s = new Scanner(System.in);                
                 String player = "";
                 int con = 0;
@@ -74,6 +94,5 @@ public class App
                 }
 		System.out.println (player + " won!");
         
-    
     }
 }
